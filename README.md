@@ -6,9 +6,6 @@ This is the terraform project for the related infrastructure.
 
 ### Deployment Infrastructure
 ```
-# Configure your AWS account
-aws configure
-
 # Download dependencies
 terraform init
 
