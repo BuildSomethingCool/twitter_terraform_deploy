@@ -12,6 +12,9 @@ aws configure
 # Download dependencies
 terraform init
 
+# Validate
+terraform validate
+
 # deploy
 terraform apply
 ```
