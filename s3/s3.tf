@@ -3,6 +3,7 @@ resource "aws_s3_bucket" "raw" {
   acl    = "private"
 
   tags = {
+    Project = "twitter streaming pipeline"
     Name = "twitter-streaming-raw-2021"
   }
 }
@@ -13,5 +14,6 @@ resource "aws_s3_bucket" "modeled" {
 
   tags = {
     Name = "twitter-streaming-modeled-2021"
+    Project = "twitter streaming pipeline"
   }
 }

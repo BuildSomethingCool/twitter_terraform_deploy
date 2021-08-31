@@ -37,3 +37,7 @@ module "vpc" {
 module "s3" {
   source = "./s3"
 }
+
+module "sqs" {
+  source = "./sqs"
+}
