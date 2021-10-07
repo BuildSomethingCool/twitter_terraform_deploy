@@ -41,3 +41,7 @@ module "s3" {
 module "sqs" {
   source = "./sqs"
 }
+
+module "glue" {
+  source = "./glue"
+}

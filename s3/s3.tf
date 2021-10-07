@@ -17,3 +17,13 @@ resource "aws_s3_bucket" "modeled" {
     Project = "twitter streaming pipeline"
   }
 }
+
+resource "aws_s3_bucket" "analyzed" {
+  bucket = "twitter-streaming-analyzed-2021"
+  acl    = "private"
+
+  tags = {
+    Name = "twitter-streaming-modeled-2021"
+    Project = "twitter streaming pipeline"
+  }
+}
