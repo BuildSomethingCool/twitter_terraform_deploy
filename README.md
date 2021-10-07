@@ -24,13 +24,18 @@ The following resources will be deployed
   - [Ingest job](https://github.com/BuildSomethingCool/TwitterStreamIngest)
   - [s3 export job](https://github.com/BuildSomethingCool/DynamoDbExport)
 - [Step function for pipeline](https://github.com/BuildSomethingCool/StepFunctionDataPipeline)
-- 2 s3 buckets
+- s3 buckets for data storage
   - 1 For Raw data
-  - 1 for result data
+  - 1 for modeled data
+  - 1 for analyzed data
 - A VPC
   - With a public subnet
 - A Secrets Manager Secret
   - For our API Keys
 - An SQS queue
   - For app communication and decoupling
+- Glue Databases
+  - Raw Database
+  - Modeled Database
+  - Post-analysis Database
 - more to come......
